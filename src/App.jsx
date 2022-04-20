@@ -21,9 +21,9 @@ const App = () => {
       <HashRouter>
         <Navigation />
         <Switch>
-          <Route path="/" component={Home} exact />
-          <Route path="/Product" component={Product} />
-          <Route path="/Cart" component={Cart} />
+          <Route path="/NoiceCafe" component={Home} exact />
+          <Route path="/NoiceCafe/Product" component={Product} />
+          <Route path="/NoiceCafe/Cart" component={Cart} />
         </Switch>
         <Footer />
       </HashRouter>
