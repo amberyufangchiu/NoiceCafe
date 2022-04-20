@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Navigation from "./Component/Navbar";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
@@ -18,7 +18,7 @@ const App = () => {
         setCartNum,
       }}
     >
-      <BrowserRouter>
+      <HashRouter>
         <Navigation />
         <Switch>
           <Route path="/" component={Home} exact />
@@ -26,7 +26,7 @@ const App = () => {
           <Route path="/Cart" component={Cart} />
         </Switch>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </Context.Provider>
   );
 };
